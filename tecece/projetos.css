@@ -63,6 +63,9 @@ body.dark::after {
     opacity: 1;
 }
 
+
+/* NAVBAR */
+
 .navbar {
     display: flex;
     align-items: center;
@@ -82,6 +85,9 @@ body.dark::after {
     height: 60px;
 }
 
+
+/* MENU SUPERIOR */
+
 .menu {
     display: flex;
     align-items: center;
@@ -98,6 +104,9 @@ body.dark::after {
 .menu a:hover {
     color: var(--botao-hover);
 }
+
+
+/* SEGUNDA NAVBAR */
 
 .navbar2 {
     display: flex;
@@ -116,7 +125,11 @@ body.dark::after {
     gap: 160px;
 }
 
-.opis a {
+
+/* BOTÕES DA SEGUNDA NAVBAR */
+
+.opis>a,
+.tutorial-menu summary {
     color: var(--navbar-texto);
     text-decoration: none;
     padding: 3px 80px;
@@ -124,11 +137,57 @@ body.dark::after {
     background-color: var(--botao);
     transition: background-color 0.5s ease, color 0.5s ease;
     text-align: center;
+    cursor: pointer;
 }
 
-.opis a:hover {
+.opis>a:hover,
+.tutorial-menu summary:hover {
     color: var(--botao-hover);
 }
+
+
+/* MENU TUTORIAIS */
+
+.tutorial-menu {
+    position: relative;
+}
+
+.tutorial-menu summary {
+    list-style: none;
+}
+
+.tutorial-menu summary::-webkit-details-marker {
+    display: none;
+}
+
+.tutorial-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding-top: 3px;
+}
+
+.tutorial-dropdown a {
+    color: var(--navbar-texto);
+    text-decoration: none;
+    text-align: center;
+    padding: 8px 10px;
+    background-color: var(--botao);
+    border-radius: 2px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.tutorial-dropdown a:hover {
+    color: var(--botao-hover);
+}
+
+
+/* FRASE */
 
 p {
     text-align: left;
@@ -138,6 +197,9 @@ p {
     color: var(--texto);
     transition: color 0.6s ease;
 }
+
+
+/* FOOTER */
 
 .footer {
     display: flex;
@@ -181,6 +243,9 @@ p {
     width: 70px;
     margin-bottom: 10px;
 }
+
+
+/* BOTÃO DE TEMA */
 
 .theme-switch {
     position: relative;
@@ -238,19 +303,19 @@ p {
     opacity: 0.35;
 }
 
-.theme-switch input:checked + .slider {
+.theme-switch input:checked+.slider {
     background-color: #EAC050;
 }
 
-.theme-switch input:checked + .slider::before {
+.theme-switch input:checked+.slider::before {
     transform: translateX(28px);
     background-color: #ffffff;
 }
 
-.theme-switch input:checked + .slider .moon {
+.theme-switch input:checked+.slider .moon {
     opacity: 0.35;
 }
 
-.theme-switch input:checked + .slider .sun {
+.theme-switch input:checked+.slider .sun {
     opacity: 1;
 }

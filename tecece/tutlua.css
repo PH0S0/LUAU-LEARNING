@@ -8,9 +8,9 @@ html {
     --navbar-texto: white;
     --botao: #EAC050;
     --botao-hover: #5090d4;
+    --caixa: hsl(43, 59%, 72%);
     --footer: #121212;
     --footer-texto: white;
-    --caixa: hsl(43, 59%, 72%);
 }
 
 body {
@@ -52,9 +52,9 @@ body.dark {
     --navbar-texto: #dddddd;
     --botao: #606162;
     --botao-hover: #4a66bb;
+    --caixa: rgba(87, 87, 87, 0.9);
     --footer: #242628;
     --footer-texto: #dddddd;
-    --caixa: rgba(87, 87, 87, 0.9);
 }
 
 body.dark::before {
@@ -80,17 +80,18 @@ body.dark::after {
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
 }
 
 .logo img {
     height: 60px;
 }
 
+
+/* MENU SUPERIOR */
+
 .menu {
     display: flex;
     align-items: center;
-    gap: 0;
 }
 
 .menu a {
@@ -116,6 +117,9 @@ body.dark::after {
     transition: background-color 0.6s ease;
 }
 
+
+/* BOTÕES */
+
 .opis {
     display: flex;
     justify-content: center;
@@ -124,23 +128,16 @@ body.dark::after {
     gap: 160px;
 }
 
-
-/* BOTÕES */
-
-.opis>a,
-.tutorial-menu summary {
+.opis>a {
     color: var(--navbar-texto);
     text-decoration: none;
     padding: 3px 80px;
     border-radius: 2px;
     background-color: var(--botao);
     transition: background-color 0.5s ease, color 0.5s ease;
-    text-align: center;
-    cursor: pointer;
 }
 
-.opis>a:hover,
-.tutorial-menu summary:hover {
+.opis>a:hover {
     color: var(--botao-hover);
 }
 
@@ -152,11 +149,21 @@ body.dark::after {
 }
 
 .tutorial-menu summary {
+    color: var(--navbar-texto);
+    cursor: pointer;
+    padding: 3px 80px;
+    border-radius: 2px;
+    background-color: var(--botao);
+    transition: background-color 0.5s ease, color 0.5s ease;
     list-style: none;
 }
 
 .tutorial-menu summary::-webkit-details-marker {
     display: none;
+}
+
+.tutorial-menu summary:hover {
+    color: var(--botao-hover);
 }
 
 .tutorial-dropdown {
@@ -188,7 +195,7 @@ body.dark::after {
 
 /* FRASE */
 
-body>p {
+p {
     text-align: left;
     margin-left: 1px;
     margin-top: -4px;
@@ -198,14 +205,21 @@ body>p {
 }
 
 
-/* HISTÓRIA */
+/* CONTEÚDO */
 
-.historia {
-    width: calc(100% - 140px);
+.caixas {
+    display: flex;
+    gap: 80px;
     margin: 25px 70px 0 70px;
 }
 
-.historia>h1 {
+.box {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.t1 {
     text-align: left;
     font-family: 'Outfit', sans-serif;
     margin: 0 0 15px 0;
@@ -213,50 +227,37 @@ body>p {
     transition: color 0.6s ease;
 }
 
-.caixa-historia {
+.texto {
     width: 100%;
+    min-height: 260px;
     box-sizing: border-box;
-    padding: 30px;
+    font-size: 15px;
+    line-height: 1;
+    padding: 25px;
     border-radius: 5px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
     background-color: var(--caixa);
     display: flex;
-    gap: 40px;
+    flex-direction: column;
     transition: background-color 0.7s ease, color 0.7s ease;
 }
 
-.parte {
-    width: 50%;
-    box-sizing: border-box;
-}
-
-.parte+.parte {
-    border-left: 2px solid rgba(0, 0, 0, 0.15);
-    padding-left: 40px;
-}
-
-.parte h2 {
-    margin: 0 0 20px 0;
+.texto h2 {
     color: var(--texto);
-    font-size: 25px;
-    transition: color 0.6s ease;
-}
-
-.parte p {
-    margin: 0 0 18px 0;
-    color: var(--texto);
-    font-size: 17px;
-    line-height: 1.5;
-    opacity: 1;
-    text-align: justify;
     transition: color 0.6s ease;
 }
 
 
 /* FOOTER */
 
+footer {
+    margin-top: auto;
+}
+
 .footer {
     display: flex;
+    width: 100%;
+    box-sizing: border-box;
     background-color: var(--footer);
     color: var(--footer-texto);
     padding: 25px 140px;
@@ -277,6 +278,11 @@ body>p {
     text-align: left;
 }
 
+.text h2 {
+    color: var(--footer-texto);
+    transition: color 0.6s ease;
+}
+
 .text2 {
     font-size: 10px;
     line-height: 1.4;
@@ -286,7 +292,6 @@ body>p {
     text-align: center;
 }
 
-.text h2,
 .text2 h2 {
     margin: 0;
     color: var(--footer-texto);
@@ -299,7 +304,7 @@ body>p {
 }
 
 
-/* BOTÃO DE TEMA */
+/* SWITCH */
 
 .theme-switch {
     position: relative;
