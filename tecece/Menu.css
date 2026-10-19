@@ -65,7 +65,6 @@ body.dark::after {
     opacity: 1;
 }
 
-
 /* NAVBAR */
 
 .navbar {
@@ -76,7 +75,6 @@ body.dark::after {
     padding: 10px 20px;
     transition: background-color 0.6s ease;
 }
-
 
 /* LOGOS */
 
@@ -89,7 +87,6 @@ body.dark::after {
 .logo img {
     height: 60px;
 }
-
 
 /* MENU SUPERIOR */
 
@@ -110,7 +107,6 @@ body.dark::after {
     color: var(--botao-hover);
 }
 
-
 /* SEGUNDA NAVBAR */
 
 .navbar2 {
@@ -122,7 +118,6 @@ body.dark::after {
     transition: background-color 0.6s ease;
 }
 
-
 /* BOTÕES */
 
 .opis {
@@ -133,7 +128,7 @@ body.dark::after {
     gap: 160px;
 }
 
-.opis>a {
+.opis a {
     color: var(--navbar-texto);
     text-decoration: none;
     padding: 3px 80px;
@@ -142,61 +137,9 @@ body.dark::after {
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-.opis>a:hover {
+.opis a:hover {
     color: var(--botao-hover);
 }
-
-
-/* MENU TUTORIAIS */
-
-.tutorial-menu {
-    position: relative;
-}
-
-.tutorial-menu summary {
-    color: var(--navbar-texto);
-    cursor: pointer;
-    padding: 3px 80px;
-    border-radius: 2px;
-    background-color: var(--botao);
-    transition: background-color 0.5s ease, color 0.5s ease;
-    list-style: none;
-}
-
-.tutorial-menu summary::-webkit-details-marker {
-    display: none;
-}
-
-.tutorial-menu summary:hover {
-    color: var(--botao-hover);
-}
-
-.tutorial-dropdown {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    z-index: 20;
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-    padding-top: 3px;
-}
-
-.tutorial-dropdown a {
-    color: var(--navbar-texto);
-    text-decoration: none;
-    text-align: center;
-    padding: 8px 10px;
-    background-color: var(--botao);
-    border-radius: 2px;
-    transition: background-color 0.5s ease, color 0.5s ease;
-}
-
-.tutorial-dropdown a:hover {
-    color: var(--botao-hover);
-}
-
 
 /* FRASE */
 
@@ -208,7 +151,6 @@ p {
     color: var(--texto);
     transition: color 0.6s ease;
 }
-
 
 /* CONTEÚDO */
 
@@ -232,7 +174,6 @@ p {
     color: var(--texto);
     transition: color 0.6s ease;
 }
-
 
 /* CAIXAS */
 
@@ -258,7 +199,6 @@ p {
     transition: color 0.6s ease;
 }
 
-
 /* FOOTER */
 
 footer {
@@ -283,7 +223,6 @@ footer {
     align-items: center;
 }
 
-
 /* TEXTO DOS INTEGRANTES */
 
 .text {
@@ -296,7 +235,6 @@ footer {
     color: var(--footer-texto);
     transition: color 0.6s ease;
 }
-
 
 /* CULTO À CIÊNCIA */
 
@@ -319,7 +257,6 @@ footer {
     width: 70px;
     margin-bottom: 10px;
 }
-
 
 /* SWITCH */
 
@@ -379,19 +316,19 @@ footer {
     opacity: 0.35;
 }
 
-.theme-switch input:checked+.slider {
+.theme-switch input:checked + .slider {
     background-color: #EAC050;
 }
 
-.theme-switch input:checked+.slider::before {
+.theme-switch input:checked + .slider::before {
     transform: translateX(28px);
     background-color: #ffffff;
 }
 
-.theme-switch input:checked+.slider .moon {
+.theme-switch input:checked + .slider .moon {
     opacity: 0.35;
 }
 
-.theme-switch input:checked+.slider .sun {
+.theme-switch input:checked + .slider .sun {
     opacity: 1;
 }

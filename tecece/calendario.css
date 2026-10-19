@@ -255,3 +255,64 @@ p {
     opacity: 1;
 }
 
+/* ===== Seção do Trello ===== */
+.trello-section {
+    width: 70%;                 /* ocupa quase toda a tela */
+    max-width: 1600px;          /* limite máximo maior */
+    margin: 40px auto 60px;
+    padding: 0 15px;
+}
+
+.trello-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.trello-header h2 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: var(--texto);
+}
+
+.btn-trello {
+    background-color: var(--botao);
+    color: #121212;
+    padding: 10px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-trello:hover {
+    background-color: var(--botao-hover);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.trello-container {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.trello-container iframe {
+    display: block;
+    width: 100%;
+    min-height: 75vh;
+    border: none;
+}
+
+/* Ajuste no modo escuro */
+body.dark .trello-container {
+    background: rgba(0, 0, 0, 0.25);
+    border-color: rgba(255, 255, 255, 0.08);
+}
