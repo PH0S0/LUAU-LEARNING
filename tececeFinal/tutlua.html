@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linguagem Lua</title>
+    <link rel="icon" type="image/png" href="QuadradoEspLuau.png">
+    <link rel="stylesheet" href="tutlua.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <a href="menu.html">
+                <img src="LuauFundo.jpg" alt="Logo">
+            </a>
+        </div>
+
+        <div class="menu">
+            <div class="theme-switch">
+                <input type="checkbox" id="themeSwitch">
+                <label for="themeSwitch" class="slider">
+                    <span class="icon moon">🌙</span>
+                    <span class="icon sun">☀️</span>
+                </label>
+            </div>
+
+            <a href="https://github.com/PH0S0/LUAU-LEARNING" target="_blank" rel="noopener noreferrer">Projetos</a>
+            <a href="referencias.html"></a>
+        </div>
+    </div>
+
+    <div class="navbar2">
+        <div class="opis">
+            <a href="historia.html">História</a>
+
+            <details class="tutorial-menu">
+                <summary>Tutoriais</summary>
+
+                <div class="tutorial-dropdown">
+                    <a href="tutlua.html">Linguagem Lua</a>
+                    <a href="tutrsz.html">Modelando mundos</a>
+                </div>
+            </details>
+
+            <a href="calendario.html">Calendario</a>
+        </div>
+    </div>
+
+
+    <p>"Poderosa, leve e brasileira."</p>
+
+
+    <div class="caixas">
+        <div class="box">
+            <h1 class="t1">
+                <strong>Programando seus próprios jogos em Lua/Luau:</strong>
+            </h1>
+
+            <div class="texto">
+
+                <h2>1. O que é Lua/Luau?</h2>
+
+                <p>
+                    Lua é uma linguagem de programação leve e simples de aprender.
+                    Luau é uma versão baseada em Lua, utilizada principalmente no Roblox.
+                    Neste tutorial, vamos aprender os conceitos básicos das duas.
+                </p>
+
+                <h2>2. Seu primeiro código</h2>
+
+                <p>
+                    Para começar, vamos mostrar uma mensagem na tela usando
+                    <strong>print()</strong>.
+                </p>
+
+                <pre><code>print("Olá, mundo!")</code></pre>
+
+                <p>O resultado será:</p>
+
+                <pre><code>Olá, mundo!</code></pre>
+
+                <p>
+                    A função <strong>print()</strong> serve para exibir mensagens
+                    ou valores. O texto fica entre aspas.
+                </p>
+
+                <h2>3. Variáveis: guardando informações</h2>
+
+                <p>
+                    Uma variável funciona como uma caixa onde guardamos um valor
+                    para usar depois.
+                </p>
+
+                <pre><code>local nome = "Henrique"
+local idade = 17
+
+print(nome)
+print(idade)</code></pre>
+
+                <p>
+                    Usamos <strong>local</strong> para criar uma variável local.
+                    O sinal <strong>=</strong> atribui um valor a ela.
+                    Você pode trocar o nome e a idade pelos seus próprios valores.
+                </p>
+
+                <h2>4. Tipos de dados</h2>
+
+                <p>
+                    Existem diferentes tipos de informação que podemos guardar:
+                </p>
+
+                <pre><code>local nome = "Ana"       -- Texto (string)
+local idade = 18         -- Número
+local jogando = true     -- Verdadeiro ou falso (boolean)
+
+print(nome)
+print(idade)
+print(jogando)</code></pre>
+
+                <p>
+                    Textos usam aspas, números não precisam delas e valores
+                    booleanos podem ser <strong>true</strong> ou <strong>false</strong>.
+                </p>
+
+                <h2>5. Tomando decisões com if</h2>
+
+                <p>
+                    O <strong>if</strong> permite executar um código somente quando
+                    uma condição é verdadeira.
+                </p>
+
+                <pre><code>local idade = 18
+
+if idade >= 18 then
+    print("Maior de idade")
+else
+    print("Menor de idade")
+end</code></pre>
+
+                <p>
+                    Se a condição for verdadeira, o primeiro bloco será executado.
+                    Caso contrário, será executado o bloco do <strong>else</strong>.
+                    O <strong>end</strong> encerra a estrutura.
+                </p>
+
+                <h2>6. Repetindo ações com loops</h2>
+
+                <p>
+                    Os loops permitem repetir uma ação sem precisar escrever
+                    o mesmo código várias vezes.
+                </p>
+
+                <pre><code>for i = 1, 5 do
+    print("Número:", i)
+end</code></pre>
+
+                <p>
+                    Esse código mostra os números de 1 até 5.
+                    A variável <strong>i</strong> muda a cada repetição.
+                </p>
+
+                <h2>7. Criando funções</h2>
+
+                <p>
+                    Uma função reúne instruções que podemos executar sempre
+                    que precisarmos.
+                </p>
+
+                <pre><code>local function cumprimentar(nome)
+    print("Olá, " .. nome .. "!")
+end
+
+cumprimentar("Ana")
+cumprimentar("Pedro")</code></pre>
+
+                <p>
+                    O símbolo <strong>..</strong> junta textos.
+                    Nesse exemplo, a função recebe um nome e mostra uma saudação.
+                </p>
+
+                <h2>8. Desafio para praticar</h2>
+
+                <p>
+                    Agora é sua vez! Tente criar um programa que guarde o nome
+                    de um personagem, sua vida e mostre se ele ainda está vivo.
+                </p>
+
+                <pre><code>local personagem = "Guerreiro"
+local vida = 100
+
+if vida > 0 then
+    print(personagem .. " está vivo!")
+else
+    print(personagem .. " foi derrotado!")
+end</code></pre>
+
+                <p>
+                    <strong>Dica:</strong> altere o valor de <strong>vida</strong>
+                    para 0 e execute o código novamente para observar a diferença.
+                </p>
+
+                <h2>Próximos passos</h2>
+
+                <p>
+                    Depois de aprender esses conceitos, você pode estudar tabelas,
+                    while, operadores, eventos e criação de scripts no Roblox Studio.
+                    Pratique modificando os exemplos e criando pequenos programas.
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="fbox">
+
+                <div class="text">
+                    <h2>
+                        Projeto feito por:<br> - Artur Guilherme<br> - Pedro Oliveira<br> - Henrique Damião<br> - David Costa
+                    </h2>
+                </div>
+
+                <div class="text2">
+                    <img src="Culto Logo.png" alt="Logo Culto à Ciência">
+                    <h2>Culto à Ciência</h2>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="dark.js"></script>
+
+</body>
+
+</html>

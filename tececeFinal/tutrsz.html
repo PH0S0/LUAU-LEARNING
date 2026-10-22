@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelando Mundos</title>
+    <link rel="icon" type="image/png" href="QuadradoEspLuau.png">
+    <link rel="stylesheet" href="tutrsz.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <a href="menu.html">
+                <img src="LuauFundo.jpg" alt="Logo">
+            </a>
+        </div>
+
+        <div class="menu">
+            <div class="theme-switch">
+                <input type="checkbox" id="themeSwitch">
+                <label for="themeSwitch" class="slider">
+                    <span class="icon moon">🌙</span>
+                    <span class="icon sun">☀️</span>
+                </label>
+            </div>
+
+            <a href="https://github.com/PH0S0/LUAU-LEARNING" target="_blank" rel="noopener noreferrer">Projetos</a>
+            <a href="referencias.html"></a>
+        </div>
+    </div>
+
+    <div class="navbar2">
+        <div class="opis">
+            <a href="historia.html">História</a>
+
+            <details class="tutorial-menu">
+                <summary>Tutoriais</summary>
+
+                <div class="tutorial-dropdown">
+                    <a href="tutlua.html">Linguagem Lua</a>
+                    <a href="tutrsz.html">Modelando mundos</a>
+                </div>
+            </details>
+
+            <a href="calendario.html">Calendario</a>
+        </div>
+    </div>
+
+    <p>"Poderosa, leve e brasileira."</p>
+
+    <div class="caixas">
+        <div class="box">
+
+            <h1 class="t1">
+                <strong>Modelando seus próprios mundos pelo Roblox Studio:</strong>
+            </h1>
+
+            <div class="texto">
+
+                <h2>1. O que é o Roblox Studio?</h2>
+
+                <p>
+                    O Roblox Studio é a ferramenta oficial utilizada para criar
+                    jogos e experiências dentro do Roblox. Com ele, você pode
+                    construir mapas, criar cenários, adicionar objetos e programar
+                    interações usando a linguagem Luau.
+                </p>
+
+                <h2>2. Conhecendo a interface</h2>
+
+                <p>
+                    Antes de começar a construir, é importante conhecer algumas
+                    partes da interface do Roblox Studio:
+                </p>
+
+                <ul>
+                    <li>
+                        <strong>Viewport:</strong> é a área principal onde você
+                        visualiza e constrói seu mundo.
+                    </li>
+                    <li>
+                        <strong>Explorer:</strong> mostra os objetos que existem
+                        no seu projeto, organizados em uma hierarquia.
+                    </li>
+                    <li>
+                        <strong>Properties:</strong> permite alterar as
+                        características do objeto selecionado.
+                    </li>
+                    <li>
+                        <strong>Toolbox:</strong> oferece modelos, imagens,
+                        sons e outros recursos que podem ser usados no projeto.
+                    </li>
+                </ul>
+
+                <p>
+                    Se alguma dessas janelas não estiver aparecendo, procure
+                    as opções correspondentes na aba View (Exibir).
+                </p>
+
+                <h2>3. Criando seu primeiro projeto</h2>
+
+                <p>
+                    Abra o Roblox Studio e siga estes passos:
+                </p>
+
+                <ol>
+                    <li>Crie um novo projeto usando o modelo Baseplate.</li>
+                    <li>Espere o cenário inicial carregar.</li>
+                    <li>Observe a plataforma e a área de construção.</li>
+                    <li>Salve seu projeto com um nome de sua escolha.</li>
+                </ol>
+
+                <p>
+                    O modelo Baseplate é um bom ponto de partida porque oferece
+                    uma plataforma simples para você construir seu primeiro mapa.
+                </p>
+
+                <h2>4. Adicionando seu primeiro objeto</h2>
+
+                <p>
+                    No Roblox Studio, os objetos básicos usados para construir
+                    cenários são chamados de Parts (peças).
+                </p>
+
+                <ol>
+                    <li>Abra a aba Home ou Model.</li>
+                    <li>Procure a opção Part e insira um bloco.</li>
+                    <li>Selecione o bloco na área de construção.</li>
+                    <li>Use as ferramentas de transformação para modificá-lo.</li>
+                </ol>
+
+                <p>
+                    As ferramentas principais são:
+                </p>
+
+                <ul>
+                    <li><strong>Move:</strong> movimenta o objeto.</li>
+                    <li><strong>Scale:</strong> altera o tamanho do objeto.</li>
+                    <li><strong>Rotate:</strong> gira o objeto.</li>
+                </ul>
+
+                <p>
+                    Experimente mover, aumentar e girar seu bloco.
+                    Assim você começa a entender como posicionar objetos no cenário.
+                </p>
+
+                <h2>5. Mudando a aparência dos objetos</h2>
+
+                <p>
+                    Você pode personalizar suas peças para deixar o mundo
+                    com a aparência que deseja.
+                </p>
+
+                <ol>
+                    <li>Selecione uma peça.</li>
+                    <li>Abra a janela Properties.</li>
+                    <li>Procure a propriedade Color para mudar a cor.</li>
+                    <li>Experimente alterar o Material para mudar a superfície.</li>
+                    <li>Modifique Size para ajustar as dimensões.</li>
+                </ol>
+
+                <p>
+                    Por exemplo, você pode usar peças verdes para criar grama,
+                    peças cinzas para construir pedras e peças marrons para
+                    representar madeira.
+                </p>
+
+                <h2>6. Construindo um pequeno cenário</h2>
+
+                <p>
+                    Agora vamos juntar o que aprendemos para criar um cenário simples.
+                </p>
+
+                <ol>
+                    <li>Use uma peça grande como base do terreno.</li>
+                    <li>Adicione blocos menores para formar um caminho.</li>
+                    <li>Crie paredes usando peças altas e finas.</li>
+                    <li>Use blocos de diferentes cores para decorar o ambiente.</li>
+                    <li>Organize os objetos para que o cenário fique interessante.</li>
+                </ol>
+
+                <p>
+                    Uma dica importante é ativar Anchored nas peças que não devem
+                    cair ou sofrer influência da física. Você encontra essa
+                    propriedade na janela Properties.
+                </p>
+
+                <h2>7. O que são Anchored e CanCollide?</h2>
+
+                <p>
+                    Duas propriedades importantes para quem está começando são:
+                </p>
+
+                <ul>
+                    <li>
+                        <strong>Anchored:</strong> quando ativada, mantém a peça
+                        fixa no lugar, impedindo que a física a movimente.
+                    </li>
+                    <li>
+                        <strong>CanCollide:</strong> quando ativada, permite que
+                        personagens e outros objetos colidam com a peça.
+                    </li>
+                </ul>
+
+                <p>
+                    Por exemplo, uma plataforma normalmente precisa de Anchored
+                    ativado e CanCollide ativado para que o jogador consiga ficar
+                    em cima dela sem que ela caia.
+                </p>
+
+                <h2>8. Organizando seus objetos</h2>
+
+                <p>
+                    Quando seu mapa começa a ficar maior, organizar os objetos
+                    se torna essencial.
+                </p>
+
+                <p>
+                    No Explorer, você pode renomear peças para identificar
+                    facilmente o que cada uma representa. Em vez de deixar
+                    vários objetos com o nome Part, use nomes como:
+                </p>
+
+                <ul>
+                    <li>PlataformaPrincipal</li>
+                    <li>ParedeCastelo</li>
+                    <li>CaminhoPedra</li>
+                    <li>ArvorePrincipal</li>
+                </ul>
+
+                <p>
+                    Também é possível agrupar objetos relacionados para facilitar
+                    a organização do projeto.
+                </p>
+
+                <h2>9. Testando seu mundo</h2>
+
+                <p>
+                    Depois de construir uma parte do cenário, teste se tudo
+                    funciona como esperado.
+                </p>
+
+                <ol>
+                    <li>Clique em Play para iniciar uma sessão de teste.</li>
+                    <li>Observe como o personagem se movimenta pelo cenário.</li>
+                    <li>Verifique se as plataformas estão posicionadas corretamente.</li>
+                    <li>Use Stop para encerrar o teste e voltar à edição.</li>
+                </ol>
+
+                <p>
+                    Testar frequentemente ajuda a encontrar problemas antes
+                    que o mapa fique muito grande.
+                </p>
+
+                <h2>10. Desafio para praticar</h2>
+
+                <p>
+                    Agora é sua vez de criar! Seu desafio é construir uma pequena
+                    ilha no Roblox Studio contendo:
+                </p>
+
+                <ul>
+                    <li>Um terreno principal.</li>
+                    <li>Um caminho feito com várias peças.</li>
+                    <li>Uma construção simples, como uma casa ou torre.</li>
+                    <li>Uma área decorada com cores e materiais diferentes.</li>
+                    <li>Plataformas fixas para o personagem poder caminhar.</li>
+                </ul>
+
+                <p>
+                    Tente fazer tudo sem copiar um mapa pronto. O objetivo é
+                    aprender a usar as ferramentas e descobrir como cada peça
+                    pode contribuir para a construção do cenário.
+                </p>
+
+                <h2>Próximos passos</h2>
+
+                <p>
+                    Depois de dominar a construção básica, você pode aprender
+                    a criar terrenos com a ferramenta Terrain Editor, utilizar
+                    modelos e iluminação, criar ambientes interiores e estudar
+                    Luau para adicionar portas, armadilhas, itens coletáveis
+                    e outras interações ao seu mundo.
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="fbox">
+
+                <div class="text">
+                    <h2>
+                        Projeto feito por:<br>
+                        - Artur Guilherme<br>
+                        - Pedro Oliveira<br>
+                        - Henrique Damião<br>
+                        - David Costa
+                    </h2>
+                </div>
+
+                <div class="text2">
+                    <img src="Culto Logo.png" alt="Logo Culto à Ciência">
+                    <h2>Culto à Ciência</h2>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="dark.js"></script>
+
+</body>
+
+</html>
